@@ -8,6 +8,19 @@ li {
     list-style: none;
 }
 
+h3, p {
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
 nav {
   padding: 1rem;
   background-color: rgb(214, 169, 124);
@@ -54,12 +67,15 @@ hr:nth-of-type(1) {
 
 .cards-div {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
     padding: 1rem;
 }
 
 .card {
+  display: grid;
+  grid-auto-rows: min-content;
+  justify-items: center;
     padding: 1rem;
     border: 1px solid brown;
     border-radius: 7px;
@@ -68,8 +84,10 @@ hr:nth-of-type(1) {
 
 }
 
-.ingredients-list {
-    padding: 0;
+.menu-item-img {
+  width: 200px;
+  height: 150px;
+
 }
 
 .contact-icons {
