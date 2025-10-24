@@ -7,6 +7,8 @@ const content = document.querySelector('#content');
 
 const navButtons = document.querySelectorAll('.nav-buttons');
 
+homeContent();
+
 navButtons.forEach((button) => {
     button.addEventListener('click', () => {
         while(content.firstChild) {
