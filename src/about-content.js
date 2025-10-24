@@ -11,7 +11,7 @@ export function aboutContent() {
 
     const locationsHeader = document.createElement('h3');
     locationsHeader.classList.add('list-header');
-    locationsHeader.textContent = 'You can find us here';
+    locationsHeader.textContent = 'You can find us here.';
 
     locationsDiv.insertAdjacentElement('beforeend', locationsHeader);
     
@@ -34,7 +34,7 @@ export function aboutContent() {
 
     const contactHeader = document.createElement('h3');
     contactHeader.classList.add('list-header');
-    contactHeader.textContent = 'Our social';
+    contactHeader.textContent = 'Our socials.';
 
     contactsDiv.insertAdjacentElement('afterbegin', contactHeader);
     
